@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vergleich - Energiespeicher</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-bolt"></i> Energiespeicher
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technologies.html">Technologien</a></li>
+                <li><a href="comparison.html" class="active">Vergleich</a></li>
+                <li><a href="schweiz.html">Schweiz</a></li>
+                <li><a href="news.html">Zukunft</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="sources.html">Quellen</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 3rem 1rem;">
+            <h1>Vergleichende Analyse</h1>
+            <p>Ein Vergleich von Effizienz, Kosten und wie ausgereift die Techniken sind.</p>
+
+        </section>
+
+        <section>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Technologie</th>
+                            <th>Wirkungsgrad [η]</th>
+                            <th>Energiedichte</th>
+                            <th>Lebensdauer</th>
+                            <th>Primäre Applikation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pumpspeicher (PHS)</strong></td>
+                            <td>70 - 85%</td>
+                            <td>Niedrig</td>
+                            <td>> 50 Jahre</td>
+                            <td>Tages-Ausgleich, Start ohne Netz</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Li-Ionen Akkumulator</strong></td>
+                            <td>90 - 95%</td>
+                            <td>Hoch</td>
+                            <td>10 - 20 Jahre</td>
+                            <td>E-Autos, Netzstabilisierung</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grüner Wasserstoff (H₂)</strong></td>
+                            <td>30 - 45%</td>
+                            <td>Sehr Hoch</td>
+                            <td>Technologieabh.</td>
+                            <td>Langzeit-Speicher, Chemie-Rohstoff</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Latentwärmespeicher (PCM)</strong></td>
+                            <td>ca. 90%</td>
+                            <td>Hoch</td>
+                            <td>> 20 Jahre</td>
+                            <td>Gebäudeklimatisierung, Industrie</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Adiabate Druckluft (CAES)</strong></td>
+                            <td>60 - 70%</td>
+                            <td>Niedrig</td>
+                            <td>> 40 Jahre</td>
+                            <td>Grosstechnische Energiespeicherung</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Superkondensatoren</strong></td>
+                            <td>> 95%</td>
+                            <td>Sehr Niedrig</td>
+                            <td>> 20 Jahre</td>
+                            <td>Kurzzeitspeicher, Lastspitzenglättung</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[4], [5], [11], [12], [14], [1]</span>
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem;">
+            <h2 class="section-title">Technologische Differenzierung</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 style="color: var(--primary-color);">Kurzzeitspeicher</h3>
+                    <p><strong>(Batterien, Supercaps)</strong></p>
+                    <ul style="padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem; color: #2ecc71;">Sehr hohe Leistung und schnelle Reaktion.
+                        </li>
+                        <li style="margin-bottom: 0.5rem; color: #2ecc71;">Exzellente Round-Trip-Wirkungsgrade (>90%).
+                        </li>
+                        <li style="margin-bottom: 0.5rem; color: #e74c3c;">Geringe Speichermenge macht den Speicher pro
+                            kWh teuer.</li>
+                        <li style="margin-bottom: 0.5rem; color: #e74c3c;">Benötigt seltene Rohstoffe (Lithium, Kobalt
+                            etc.).</li>
+                    </ul>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[2], [3], [4], [6]</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-color);">Langzeitspeicher</h3>
+                    <p><strong>(Wasserstoff, Pumpspeicher)</strong></p>
+                    <ul style="padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem; color: #2ecc71;">Leistung und Speichermenge sind getrennt
+                            planbar.</li>
+                        <li style="margin-bottom: 0.5rem; color: #2ecc71;">Erlaubt das Speichern von Sommer-Energie für
+                            den Winter.</li>
+                        <li style="margin-bottom: 0.5rem; color: #e74c3c;">Hohe Umwandlungsverluste (besonders bei
+                            Wasserstoff).</li>
+                        <li style="margin-bottom: 0.5rem; color: #e74c3c;">Teure Infrastruktur nötig (Speicherhöhlen,
+                            Leitungen).
+                        </li>
+                    </ul>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[11], [13], [15], [1]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Energiespeicher</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sources.html">Quellen</a>
+                <a href="#">Impressum</a>
+            </div>
+            <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

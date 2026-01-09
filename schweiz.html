@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schweiz - Energiespeicher</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-bolt"></i> Energiespeicher
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technologies.html">Technologien</a></li>
+                <li><a href="comparison.html">Vergleich</a></li>
+                <li><a href="schweiz.html" class="active">Schweiz</a></li>
+                <li><a href="news.html">Zukunft</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="sources.html">Quellen</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 3rem 1rem;">
+            <h1>Energiespeicher Schweiz</h1>
+            <p>Vom "Wasserschloss Europas" zur Batterie-Nation? Aktuelle Projekte und Marktentwicklungen.</p>
+            <img src="images/swiss_energy_landscape.png" alt="Schweizer Alpen Speicher" class="responsive-img"
+                style="margin-top: 2rem;">
+        </section>
+
+        <section class="hero-overlap-fix">
+            <h2 class="section-title">Wandel: Der Batterie-Boom</h2>
+            <div class="card-grid">
+                <div class="card" style="grid-column: span 2;">
+                    <h3><i class="fa-solid fa-chart-line" style="color: var(--primary-color);"></i> Mit
+                        Preisschwankungen Geld verdienen</h3>
+                    <p>
+                        Weil immer mehr Sonnenstrom produziert wird, schwanken die Preise stark: Mittags ist Strom
+                        billig, abends teuer.
+                        Schweizer Firmen wie die BKW oder Axpo bauen deshalb grosse Batterien.
+                        Sie laden sie, wenn der Strom günstig ist, und verkaufen den Strom, wenn er teuer ist.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Projektrealisierung</h3>
+                    <p>
+                        Batterien sind viel einfacher zu bauen als Windräder oder Stromleitungen.
+                        Man braucht oft nur eine einfache Bewilligung und keine langen Umwelt-Prüfungen (ausser wegen
+                        Lärm durch Lüfter).
+                        Die BKW will schon 2028 erste Anlagen starten.
+                    </p>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[16]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem;">
+            <h2 class="section-title">Konkrete Projekte & Infrastruktur</h2>
+            <div class="tech-details" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                <div>
+                    <h3>Leuchtturmprojekt Wallis</h3>
+                    <p>
+                        Der Energieversorger <strong>Enalpin</strong> hat in Stalden (VS) eine 8-MW-Batterie
+                        installiert. Das Projekt zeigt die Geschwindigkeit der Entwicklung:
+                        Vom Bewilligungsverfahren (5 Monate) bis zur Lieferung der Komponenten aus China (9 Monate)
+                        verging kaum Zeit. Die Kosten belaufen sich auf ca. 6 Millionen Franken.
+                        Dies ist möglich, da Lithium-Eisenphosphat-Batterien (LFP) massiv günstiger geworden sind.
+                    </p>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[16]</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Datenlücke & Netzstabilität</h3>
+                    <p>
+                        Trotz Aufbruchstimmung fehlt der Gesamtüberblick: Es gibt derzeit keine zentrale Institution,
+                        die erhebt, wie viele Speicher effektiv am Netz sind.
+                        Für Swissgrid sind Batterien erst ab 150 MW direkt relevant – eine Schwelle, die bisherige
+                        Projekte noch nicht erreichen.
+                        Dennoch sind diese dezentralen Speicher essenziell für die lokale Netzstabilität.
+                    </p>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[16]</span>
+                    </div>
+                </div>
+            </div>
+            <img src="images/schweizbatterie.webp" alt="Technologievergleich Schweiz" class="responsive-img"
+                style="margin-top: 3rem;">
+        </section>
+
+        <section
+            style="margin-top: 4rem; background-color: var(--card-bg); padding: 2rem; border-radius: var(--radius-lg);">
+            <h3 style="margin-bottom: 1rem;">Warum Lithium-Eisenphosphat (LFP)?</h3>
+            <p>
+                Schweizer Versorger setzen primär auf LFP-Technologie. Gründe dafür sind:
+            </p>
+            <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Robustheit:</strong> Halten länger als normale Akkus.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Sicherheit:</strong> Brennen kaum.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Preis & Umwelt:</strong> Ohne Kobalt und viel günstiger durch
+                    Massenproduktion.</li>
+            </ul>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[16]</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Energiespeicher</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="technologies.html">Technologien</a>
+                <a href="comparison.html">Vergleich</a>
+                <a href="schweiz.html">Schweiz</a>
+                <a href="news.html">Zukunft</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sources.html">Quellen</a>
+            </div>
+            <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

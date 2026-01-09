@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologien - Energiespeicher</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tech-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .tech-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            background: rgba(42, 157, 143, 0.1);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+
+
+        .tech-showcase-content {
+            padding: 2rem;
+        }
+
+        .tech-label {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-bolt"></i> Energiespeicher
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technologies.html" class="active">Technologien</a></li>
+                <li><a href="comparison.html">Vergleich</a></li>
+                <li><a href="schweiz.html">Schweiz</a></li>
+                <li><a href="news.html">Zukunft</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="sources.html">Quellen</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 3rem 1rem; margin-bottom: 2rem;">
+            <h1>Speichertechnologien im Detail</h1>
+            <p>Ein tiefer Einblick in die physikalischen und chemischen Prinzipien moderner Energiespeicher.</p>
+
+            <!-- Gallery Navigation -->
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+
+                <a href="#mech" class="card"
+                    style="text-decoration: none; padding: 1.5rem; text-align: center; align-items: center; justify-content: center; gap: 1rem; cursor: pointer;">
+                    <i class="fa-solid fa-water" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <span style="font-weight: 600; color: var(--secondary-color);">Mechanisch</span>
+                </a>
+
+                <a href="#electro" class="card"
+                    style="text-decoration: none; padding: 1.5rem; text-align: center; align-items: center; justify-content: center; gap: 1rem; cursor: pointer;">
+                    <i class="fa-solid fa-battery-full" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <span style="font-weight: 600; color: var(--secondary-color);">Elektrochemisch</span>
+                </a>
+
+                <a href="#chem" class="card"
+                    style="text-decoration: none; padding: 1.5rem; text-align: center; align-items: center; justify-content: center; gap: 1rem; cursor: pointer;">
+                    <i class="fa-solid fa-flask" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <span style="font-weight: 600; color: var(--secondary-color);">Chemisch</span>
+                </a>
+
+                <a href="#therm" class="card"
+                    style="text-decoration: none; padding: 1.5rem; text-align: center; align-items: center; justify-content: center; gap: 1rem; cursor: pointer;">
+                    <i class="fa-solid fa-fire" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <span style="font-weight: 600; color: var(--secondary-color);">Thermisch</span>
+                </a>
+
+                <a href="#elec" class="card"
+                    style="text-decoration: none; padding: 1.5rem; text-align: center; align-items: center; justify-content: center; gap: 1rem; cursor: pointer;">
+                    <i class="fa-solid fa-bolt-lightning" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <span style="font-weight: 600; color: var(--secondary-color);">Elektrisch</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Mechanical Storage -->
+        <section id="mech" class="tech-section">
+            <div class="tech-header">
+                <div class="tech-icon"><i class="fa-solid fa-water"></i></div>
+                <h2>Mechanische Speicher</h2>
+            </div>
+            <p>
+                Mechanische Speicher nutzen Bewegung oder Lage, um Energie zu speichern.
+                Sie sind die älteste und am weitesten verbreitete Art der grossen Energiespeicher.
+                Pumpspeicherkraftwerke machen über 90% der weltweiten Speicherkapazität aus.
+                Sie sind sehr robust und können riesige Mengen Energie über viele Jahrzehnte zuverlässig liefern, was
+                sie
+                unverzichtbar für eine sichere Stromversorgung macht.
+            </p>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[1]</span>
+            </div>
+
+            <div class="tech-showcase">
+                <img src="images/pumped_storage_plant.png" alt="Pumpspeicherkraftwerk"
+                    class="responsive-img card-img-top">
+                <div class="tech-showcase-content">
+                    <span class="tech-label">Beispieltechnologie</span>
+                    <h3>Pumpspeicherkraftwerke (PHS)</h3>
+                    Pumpspeicherkraftwerke sind derzeit die einzige Technik, die Energie im sehr grossen Massstab
+                    (Gigawatt) speichern kann.
+                    Das Prinzip ist einfach: Wasser wird in ein höher gelegenes Becken gepumpt, um Energie als
+                    Lageenergie zu speichern.
+                    <div class="tech-grid">
+                        <div>
+                            <h4>Funktionsweise</h4>
+                            <p style="font-size: 0.95rem; opacity: 0.8;">
+                                Wenn zu viel Strom da ist, pumpen Pumpen das Wasser aus einem Talbecken in ein
+                                Speicherbecken oben am Berg.
+                                So wird elektrische Energie in Lageenergie umgewandelt.
+                                Wenn Strom gebraucht wird, fliesst das Wasser wieder herunter und treibt Turbinen an,
+                                die
+                                Strom erzeugen.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Eigenschaften</h4>
+                            <ul style="padding-left: 1.5rem; font-size: 0.95rem; opacity: 0.8; margin-top: 0.5rem;">
+                                <li><strong>Wirkungsgrad:</strong> 70 - 85% (Round-Trip)</li>
+                                <li><strong>Lebensdauer:</strong> > 50 Jahre (sehr langlebig)</li>
+                                <li><strong>Limitierung:</strong> Abhängig von Topografie (Berge/Täler)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[1], [2], [3]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added CAES from Comparison data [12] -->
+            <div class="tech-showcase" style="margin-top: 3rem;">
+                <img src="images/Druckluftspeicher.jpg" alt="Druckluftspeicher" class="responsive-img card-img-top">
+                <div class="tech-showcase-content">
+                    <span class="tech-label" style="background-color: var(--secondary-color);">Alternative</span>
+                    <h3>Adiabate Druckluftspeicher (CAES)</h3>
+                    <p>
+                        Druckluftspeicher nutzen überschüssigen Strom, um Luft in unterirdische Hohlräume (Kavernen) zu
+                        pressen. Bei Bedarf wird die Luft entspannt und treibt Turbinen an.
+                    </p>
+                    <div class="tech-grid">
+                        <div>
+                            <h4>Funktionsweise</h4>
+                            <p style="font-size: 0.95rem; opacity: 0.8;">
+                                Beim "adiabaten" Verfahren wird die Wärme, die beim Komprimieren der Luft entsteht,
+                                gespeichert.
+                                Wenn die Luft später wieder entspannt wird, um Strom zu erzeugen, wird diese Wärme
+                                wieder genutzt.
+                                Das erhöht den Wirkungsgrad auf bis zu 70% und man braucht kein Gas mehr um zu heizen.
+                                So arbeitet die Anlage effizient und ohne CO2-Ausstoss.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Eigenschaften</h4>
+                            <ul style="padding-left: 1.5rem; font-size: 0.95rem; opacity: 0.8; margin-top: 0.5rem;">
+                                <li><strong>Wirkungsgrad:</strong> 60 - 70%</li>
+                                <li><strong>Lebensdauer:</strong> > 40 Jahre</li>
+                                <li><strong>Einsatz:</strong> Grosstechnische Energiespeicherung</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[12]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Electrochemical Storage -->
+        <section id="electro" class="tech-section">
+            <div class="tech-header">
+                <div class="tech-icon"><i class="fa-solid fa-battery-full"></i></div>
+                <h2>Elektrochemische Speicher</h2>
+            </div>
+            <p>
+                Hier wird Strom direkt in chemische Energie umgewandelt und bei Bedarf wieder zurück.
+                Diese Speicher sind extrem flexibel: Es gibt sie von der kleinen Knopfzelle bis zum riesigen
+                Batteriepark.
+                Batterien reagieren blitzschnell (in Millisekunden) und können so das Stromnetz stabilisieren.
+                Dank neuer Technologien (wie Lithium-Ionen) sind sie viel günstiger geworden und lohnen sich heute auch
+                für grosse Anwendungen.
+            </p>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[2], [16]</span>
+            </div>
+
+            <div class="tech-showcase">
+                <img src="images/Lithium-Ionen Akkumulator.jpeg" alt="Lithium Ionen Akku"
+                    class="responsive-img card-img-top">
+                <div class="tech-showcase-content">
+                    <span class="tech-label">Beispieltechnologie</span>
+                    <h3>Lithium-Ionen-Akkumulator</h3>
+                    <p>
+                        Der Standard für mobile Elektronik und E-Mobilität. Li-Ion-Akkus bieten die höchste
+                        Energiedichte.
+                        Die Kosten wurden in den letzten 15 Jahren um über 90% gesenkt.
+                    </p>
+                    <div class="tech-grid">
+                        <div>
+                            <h4>Funktionsweise</h4>
+                            <p style="font-size: 0.95rem; opacity: 0.8;">
+                                Beim Laden wandern Lithium-Teilchen vom Pluspol zum Minuspol und lagern sich dort ein.
+                                Beim Entladen wandern sie zurück und geben dabei Strom ab.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Eigenschaften</h4>
+                            <ul style="padding-left: 1.5rem; font-size: 0.95rem; opacity: 0.8; margin-top: 0.5rem;">
+                                <li><strong>Wirkungsgrad:</strong> > 95% (Hocheffizient)</li>
+                                <li><strong>Zyklen:</strong> 1.000 - 5.000</li>
+                                <li><strong>Herausforderung:</strong> Kritische Rohstoffe (Kobalt, Lithium) und
+                                    Brandgefahr (Thermal Runaway).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[2], [4], [6]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sub-categories Grid -->
+
+        </section>
+
+        <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: var(--secondary-color);">Weitere Varianten &
+            Zukunft</h3>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+
+            <!-- LFP Card -->
+            <div class="tech-showcase" style="margin-top: 0;">
+                <div class="tech-showcase-content">
+                    <span class="tech-label" style="background-color: var(--secondary-color);">Stationär</span>
+                    <h3>LFP & Second-Life</h3>
+                    <p style="font-size: 0.95rem; opacity: 0.8; margin-bottom: 1rem;">
+                        <strong>Lithium-Eisenphosphat:</strong> Verzicht auf Kobalt, thermisch stabil, zyklenfest.
+                        Ideal für Heimspeicher und Industrie.
+                    </p>
+                    <p style="font-size: 0.95rem; opacity: 0.8;">
+                        <strong>Second-Life:</strong> Alte E-Auto-Akkus werden weitergenutzt. Das ist gut für die
+                        Umwelt.
+                    </p>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[9], [16]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chemical Storage -->
+        <section id="chem" class="tech-section">
+            <div class="tech-header">
+                <div class="tech-icon"><i class="fa-solid fa-flask"></i></div>
+                <h2>Chemische Speicher (Power-to-Gas)</h2>
+            </div>
+            <p>
+                Um riesige Energiemengen (im Terawattstunden-Bereich) langfristig zu speichern, braucht man chemische
+                Stoffe ("Power-to-Gas").
+                Dabei wird Strom genutzt, um Gas wie Wasserstoff herzustellen.
+                Der grosse Vorteil: Man kann Energie vom sonnigen Sommer bis in den Winter aufheben.
+                Ausserdem kann man den grünen Strom so auch in der Industrie, im Verkehr oder zum Heizen nutzen.
+            </p>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[8], [15]</span>
+            </div>
+
+            <div class="tech-showcase">
+                <img src="images/Wasserstoffökonomie.jpg" alt="Wasserstoff Elektrolyse"
+                    class="responsive-img card-img-top">
+                <div class="tech-showcase-content">
+                    <span class="tech-label">Beispieltechnologie</span>
+                    <h3>Grüner Wasserstoff (H₂)</h3>
+                    <p>
+                        Wasserstoff wird oft als "Erdöl von morgen" bezeichnet. Er ist ein universeller Energieträger,
+                        der aus erneuerbarem Strom erzeugt wird und speicherbar, transportierbar sowie vielseitig
+                        nutzbar ist.
+                    </p>
+                    <div class="tech-grid">
+                        <div>
+                            <h4>Funktionsweise</h4>
+                            <p style="font-size: 0.95rem; opacity: 0.8;">
+                                In einem <strong>Elektrolyseur</strong> wird Wasser mit Hilfe von Strom in Wasserstoff
+                                und Sauerstoff geteilt.
+                                Der Wasserstoff kann dann gespeichert und später wieder in Strom umgewandelt werden.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Eigenschaften</h4>
+                            <ul style="padding-left: 1.5rem; font-size: 0.95rem; opacity: 0.8; margin-top: 0.5rem;">
+                                <li><strong>Kapazität:</strong> Nahezu unbegrenzt skalierbar</li>
+                                <li><strong>Wirkungsgrad:</strong> Gering (ca. 40% Strom-zu-Strom)</li>
+                                <li><strong>Vorteil:</strong> Wichtig für Chemie, Stahlproduktion und LKW-Verkehr sowie
+                                    als Speicher für den Winter.</li>
+                                <li><strong>Infrastruktur:</strong> Kann über bestehende Gasleitungen transportiert
+                                    werden.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[8], [11], [13], [15]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thermal Storage -->
+        <section id="therm" class="tech-section">
+            <div class="tech-header">
+                <div class="tech-icon"><i class="fa-solid fa-fire"></i></div>
+                <h2>Thermische Speicher</h2>
+            </div>
+            <p>
+                Wärme macht einen Grossteil unseres Energieverbrauchs aus (z.B. Heizung).
+                Thermische Speicher heben Wärme auf, bis sie gebraucht wird.
+                Sie sind oft einfacher und billiger als Stromspeicher.
+                Es gibt auch neue Speicher, die Wärme beim Schmelzen von Materialien speichern können.
+            </p>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[14]</span>
+            </div>
+
+            <div class="tech-showcase">
+                <img src="images/Latentwärmespeicher.jpg" alt="Latentwärmespeicher" class="responsive-img card-img-top">
+                <div class="tech-showcase-content">
+                    <span class="tech-label">Beispieltechnologie</span>
+                    <h3>Latentwärmespeicher (PCM)</h3>
+                    <p>
+                        PCM (Phase Change Materials) nutzen physikalische Phasenübergänge (z.B. schmelzen/erstarren), um
+                        Energie zu speichern.
+                        Sie bieten eine weit höhere Speicherdichte als Wassertanks.
+                    </p>
+                    <div class="tech-grid">
+                        <div>
+                            <h4>Funktionsweise</h4>
+                            <p style="font-size: 0.95rem; opacity: 0.8;">
+                                Wenn ein Stoff schmilzt (z.B. fest zu flüssig), nimmt er viel Wärme auf.
+                                Bekanntes Beispiel: Paraffin oder Wachs. Wenn es wieder fest wird, gibt es die Wärme ab.
+                                So kann man viel Energie speichern, ohne dass es extrem heiss werden muss.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Eigenschaften</h4>
+                            <ul style="padding-left: 1.5rem; font-size: 0.95rem; opacity: 0.8; margin-top: 0.5rem;">
+                                <li><strong>Dichte:</strong> Hohe Energiedichte bei kleinem Volumen</li>
+                                <li><strong>Einsatz:</strong> Gebäudeklimatisierung, Industrieprozesse</li>
+                                <li><strong>Besonderheit:</strong> Pufferung von Temperaturspitzen.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[14]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Electrical Storage -->
+        <section id="elec" class="tech-section" style="border-bottom: none;">
+            <div class="tech-header">
+                <div class="tech-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                <h2>Elektrische Speicher</h2>
+            </div>
+            <p>
+                Elektrische Speicher speichern Energie direkt in elektrischen oder magnetischen Feldern.
+                Da keine chemische Umwandlung nötig ist, können sie Energie blitzschnell aufnehmen und abgeben.
+                Sie eignen sich daher perfekt für Anwendungen, bei denen kurzzeitig sehr viel Leistung benötigt wird
+                (High Power), weniger für die Langzeitspeicherung (High Energy).
+            </p>
+            <div class="source-container">
+                <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen einblenden</button>
+                <span class="source-list">[2], [5]</span>
+            </div>
+
+            <div class="tech-showcase">
+                <img src="images/superkondensator.png" alt="Supercap" class="responsive-img card-img-top">
+                <div class="tech-showcase-content">
+                    <span class="tech-label">Beispieltechnologie</span>
+                    <h3>Superkondensatoren (Supercaps)</h3>
+                    <p>
+                        Superkondensatoren speichern Energie in einem elektrischen Feld statt chemisch.
+                        Dadurch können sie Energie extrem schnell aufnehmen und abgeben (hohe Leistungsdichte),
+                        speichern aber vergleichsweise wenig Energie (geringe Energiedichte).
+                        Sie eignen sich perfekt, um kurzzeitige Lastspitzen abzufangen, z.B. beim Bremsen von Zügen oder
+                        in Windkraftanlagen.
+                    </p>
+                    <div class="tech-grid">
+                        <div>
+                            <h4>Funktionsweise</h4>
+                            <p style="font-size: 0.95rem; opacity: 0.8;">
+                                Elektrostatische Ladungstrennung an der Oberfläche von Elektroden
+                                (Helmholtz-Doppelschicht).
+                                Es findet keine chemische Reaktion statt, daher verschleissen sie kaum.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Eigenschaften</h4>
+                            <ul style="padding-left: 1.5rem; font-size: 0.95rem; opacity: 0.8; margin-top: 0.5rem;">
+                                <li><strong>Leistung:</strong> Extrem hoch (Power Density)</li>
+                                <li><strong>Zyklen:</strong> > 1.000.000 (fast unbegrenzt)</li>
+                                <li><strong>Wirkungsgrad:</strong> > 95%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="source-container">
+                        <button class="source-toggle-btn"><i class="fa-solid fa-chevron-right"></i> Quellen
+                            einblenden</button>
+                        <span class="source-list">[5]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Energiespeicher</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="technologies.html">Technologien</a>
+                <a href="comparison.html">Vergleich</a>
+                <a href="schweiz.html">Schweiz</a>
+                <a href="news.html">Zukunft</a>
+                <a href="sources.html">Quellen</a>
+            </div>
+            <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
