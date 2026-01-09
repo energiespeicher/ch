@@ -2,11 +2,11 @@ const questions = [
     {
         question: "Welche Speichertechnologie hat weltweit die grösste installierte Kapazität?",
         options: ["Lithium-Ionen-Batterien", "Pumpspeicherkraftwerke", "Wasserstoff", "Druckluftspeicher"],
-        correct: 1 // Pumpspeicher
+        correct: 1
     },
     {
-        question: "Was ist ein 'Dunkelflaute'?",
-        options: ["Ein Stromausfall in der Nacht", "Eine Zeit ohne Sonne und Wind", "Ein defekter Solarpark", "Ein tiefer Schacht für Erdwärme"],
+        question: "Was versteht man unter einer 'Dunkelflaute'?",
+        options: ["Ein Stromausfall in der Nacht", "Eine längere Zeit ohne Sonne und Wind", "Ein defekter Solarpark", "Einen tiefen Schacht für Erdwärme"],
         correct: 1
     },
     {
@@ -15,152 +15,67 @@ const questions = [
         correct: 2
     },
     {
-        question: "Welchem Zweck dient die 'Sektorenkopplung'?",
-        options: ["Verbindung verschiedener Stromkabel", "Nutzung von Strom in Verkehr & Wärme", "Fusion von Energiekonzernen", "Verbindung von Solarzellen"],
+        question: "Was wird in einem 'Power-to-Gas'-Prozess primär hergestellt?",
+        options: ["Erdgas", "Wasserstoff", "Lachgas", "Helium"],
         correct: 1
     },
     {
-        question: "Was wird in einem 'Power-to-Gas'-Prozess hergestellt?",
-        options: ["Erdgas", "Wasserstoff oder synthetisches Methan", "Lachgas", "Helium"],
+        question: "Was ist ein wesentlicher Vorteil von LFP (Lithium-Eisenphosphat) Batterien?",
+        options: ["Höhere Energiedichte als alle anderen", "Verzicht auf Kobalt & hohe Sicherheit", "Sie sind flüssig", "Sie leuchten im Dunkeln"],
         correct: 1
     },
     {
-        question: "Welches Metall ist kritisch für viele Lithium-Ionen-Batterien?",
-        options: ["Eisen", "Kobalt", "Aluminium", "Kupfer"],
+        question: "Was ist der Hauptnachteil von Wasserstoff bei der Rückverstromung?",
+        options: ["Man kann ihn nicht transportieren", "Geringerr Wirkungsgrad", "Er ist zu schwer", "Er ist blau"],
         correct: 1
     },
     {
-        question: "Was ist ein Vorteil von LFP (Lithium-Eisenphosphat) Akkus?",
-        options: ["Höhere Energiedichte als alle anderen", "Kein Kobalt & thermisch sicher", "Sie sind flüssig", "Sie leuchten im Dunkeln"],
-        correct: 1
-    },
-    {
-        question: "Wie wird Energie in einem Pumpspeicherkraftwerk gespeichert?",
-        options: ["Als chemische Bindung", "Als Wärme im Wasser", "Als potentielle Energie (Lageenergie)", "Als Druckluft"],
-        correct: 2
-    },
-    {
-        question: "Was ist der Hauptnachteil von Wasserstoff als Speicher?",
-        options: ["Man kann ihn nicht transportieren", "Geringer Wirkungsgrad (Strom-zu-Strom)", "Er ist zu schwer", "Er ist blau"],
-        correct: 1
-    },
-    {
-        question: "Wofür steht 'PCM' bei thermischen Speichern?",
+        question: "Wofür steht die Abkürzung 'PCM' bei thermischen Speichern?",
         options: ["Power Control Module", "Phase Change Material", "Personal Computer Memory", "Pure Chemical Matter"],
         correct: 1
     },
     {
-        question: "Welche Speichertechnologie reagiert am schnellsten auf Netzschwankungen?",
-        options: ["Pumpspeicher", "Batterien / Supercaps", "Wasserstoff-Tanks", "Druckluftspeicher"],
-        correct: 1
-    },
-    {
-        question: "Wie lange halten Superkondensatoren (Supercaps) typischerweise?",
+        question: "Wie viele Ladezyklen erreichen Superkondensatoren (Supercaps) typischerweise?",
         options: ["100 Zyklen", "1.000 Zyklen", "Über 1.000.000 Zyklen", "Einmalige Nutzung"],
         correct: 2
     },
     {
-        question: "Was passiert beim 'Thermal Runaway' einer Batterie?",
-        options: ["Die Batterie friert ein", "Die Batterie überhitzt unkontrolliert", "Die Batterie läuft aus", "Die Batterie lädt zu schnell"],
+        question: "Wo wird die Druckluft in adiabaten CAES-Kraftwerken gespeichert?",
+        options: ["In Ballons", "In unterirdischen Hohlräumen", "In alten Bergwerken", "In Wassertanks"],
         correct: 1
     },
     {
-        question: "Welches Gas wird oft als 'Erdöl von morgen' bezeichnet?",
-        options: ["Sauerstoff", "Stickstoff", "Wasserstoff", "Kohlendioxid"],
+        question: "Was bedeutet 'adiabat' im Zusammenhang mit Druckluftspeichern?",
+        options: ["Ohne Luft", "Die Kompressionswärme wird gespeichert und genutzt", "Unter Wasser", "Mit Erdgas-Zufeuerung"],
+        correct: 1
+    },
+    {
+        question: "Wie gross ist der Anteil von Pumpspeichern an der weltweiten Speicherkapazität?",
+        options: ["Ca. 10%", "Ca. 50%", "Über 90%", "100%"],
         correct: 2
     },
     {
-        question: "Wo wird Druckluft in CAES-Anlagen gespeichert?",
-        options: ["In Ballons", "In unterirdischen Kavernen", "In alten Bergwerken", "In Wassertanks"],
+        question: "Welche Speichertechnologie eignet sich am besten für die saisonale Langzeitspeicherung (Sommer zu Winter)?",
+        options: ["Lithium-Ionen-Batterien", "Chemische Speicher", "Schwungräder", "Kondensatoren"],
         correct: 1
     },
     {
-        question: "Was ist ein Vorteil von 'Second-Life'-Batterien?",
-        options: ["Sie sind nagelneu", "Sie schonen Ressourcen durch Weiterverwendung", "Sie haben doppelte Kapazität", "Sie sind leichter"],
-        correct: 1
-    },
-    {
-        question: "Welche Technologie trennt Leistung und Kapazität voneinander?",
-        options: ["Lithium-Ionen", "Pumpspeicher", "Redox-Flow-Batterien", "Kondensatoren"],
-        correct: 2
-    },
-    {
-        question: "Warum braucht die Schweiz im Winter Importstrom?",
-        options: ["Weil die Kabel gefrieren", "Geringere Flusspegel und weniger Sonne", "Weil die AKWs abgeschaltet sind", "Zu viel Verbrauch durch Weihnachtsbeleuchtung"],
-        correct: 1
-    },
-    {
-        question: "Was soll das Projekt Nant de Drance leisten?",
-        options: ["Atomstrom produzieren", "Als riesige Batterie für Europa dienen", "Erdgas fördern", "Windenergie speichern"],
-        correct: 1
-    },
-    {
-        question: "Welches Material könnte Lithium in Zukunft ersetzen, da es billig und verfügbar ist?",
-        options: ["Gold", "Natrium", "Platin", "Uran"],
-        correct: 1
-    },
-    {
-        question: "Was bedeutet 'adiabat' bei Druckluftspeichern?",
-        options: ["Ohne Luft", "Wärme wird gespeichert und wiedergenutzt", "Unter Wasser", "Mit Erdgas-Zufeuerung"],
-        correct: 1
-    },
-    {
-        question: "Wie viel % der weltweiten Speicherkapazität sind Pumpspeicher?",
-        options: ["Ca. 10%", "Ca. 50%", "Ca. 90%", "100%"],
-        correct: 2
-    },
-    {
-        question: "Was ist die Hauptaufgabe von Speichern im Stromnetz?",
-        options: ["Strom teurer machen", "Angebot und Nachfrage ausgleichen (Balance)", "Verbrauch erhöhen", "Spannung verringern"],
-        correct: 1
-    },
-    {
-        question: "Welche Art von Speicher eignet sich am besten für saisonale Speicherung (Sommer->Winter)?",
-        options: ["Batterien", "Chemische Speicher (Wasserstoff)", "Schwungräder", "Kondensatoren"],
-        correct: 1
-    },
-    {
-        question: "Was verbessert Festkörperbatterien gegenüber herkömmlichen?",
-        options: ["Fester Elektrolyt (Sicherheit & Dichte)", "Flüssiges Metall", "Grösseres Gehäuse", "Niedrigere Spannung"],
+        question: "Was ist das besondere Merkmal von Festkörperbatterien (Solid State)?",
+        options: ["Fester Elektrolyt statt flüssiger Chemie", "Flüssiges Metall", "Grösseres Gehäuse", "Niedrigere Spannung"],
         correct: 0
     },
     {
-        question: "Welches Land nennt man oft das 'Wasserschloss Europas'?",
-        options: ["Deutschland", "Frankreich", "Die Schweiz", "Norwegen"],
+        question: "Wie wird die Schweiz im europäischen Energiekontext oft genannt?",
+        options: ["Strominsel", "Batterie-Nation", "Wasserschloss Europas", "Alpen-Reaktor"],
         correct: 2
     },
     {
-        question: "Was ist ein 'Prosumer'?",
-        options: ["Ein professioneller Verbraucher", "Jemand, der Energie produziert und konsumiert", "Ein Batteriehersteller", "Ein Stromzähler"],
-        correct: 1
-    },
-    {
-        question: "Wie nennt man die Glättung von Lastspitzen durch Speicher?",
-        options: ["Peak Shaving", "Load Running", "Energy Cutting", "Power Lifting"],
-        correct: 0
-    },
-    {
-        question: "Welche physikalische Einheit misst die speicherbare Energiemenge?",
-        options: ["Watt (W)", "Volt (V)", "Kilowattstunden (kWh)", "Ampere (A)"],
-        correct: 2
-    },
-    {
-        question: "Warum sind Speicher für die Energiewende unverzichtbar?",
-        options: ["Weil sie schön aussehen", "Um fossile Kraftwerke als Backup zu ersetzen", "Um den Strompreis zu erhöhen", "Damit wir mehr Kabel bauen können"],
-        correct: 1
-    },
-    {
-        question: "Welches Material wird oft für Latentwärmespeicher (PCM) genutzt?",
+        question: "Welches Material wird häufig für Latentwärmespeicher (PCM) genutzt?",
         options: ["Metall", "Paraffin oder Wachs", "Holz", "Sand"],
         correct: 1
     },
     {
-        question: "Was ist eine Schwäche von Superkondensatoren?",
-        options: ["Lange Ladezeit", "Geringe Energiedichte", "Schlechter Wirkungsgrad", "Hohes gewicht"],
-        correct: 1
-    },
-    {
-        question: " Welches Unternehmen hat im Wallis eine 8-MW-Batterie installiert?",
+        question: "Welcher Schweizer Energieversorger hat in Stalden (VS) eine 8-MW-Batterie gebaut?",
         options: ["Alpiq", "Enalpin", "Swissgrid", "Solar Impulse"],
         correct: 1
     },
@@ -170,84 +85,69 @@ const questions = [
         correct: 1
     },
     {
-        question: "Warum bauen Energieversorger wie die BKW grosse Batterien?",
-        options: ["Nur für den Eigenbedarf", "Zum Handel mit Strompreisschwankungen", "Als Museumsstück", "Um Überschuss zu vernichten"],
+        question: "Warum investieren Firmen wie die BKW in grosse Batteriespeicher?",
+        options: ["Nur für den Eigenbedarf", "Um Preisschwankungen am Strommarkt zu nutzen", "Als Museumsstück", "Um Überschuss zu vernichten"],
         correct: 1
     },
     {
-        question: "Welche bestehende Infrastruktur könnte für Wasserstoff genutzt werden?",
+        question: "Welche bestehende Infrastruktur soll für den Wasserstofftransport genutzt werden?",
         options: ["Stromkabel", "Gasleitungen", "Telefonleitungen", "Abwasserrohre"],
         correct: 1
     },
     {
-        question: "Welcher Speicher hat die theoretisch höchste Speicherdichte?",
-        options: ["Schwungrad", "Chemische Speicher (H₂)", "Kondensator", "Li-Ionen"],
+        question: "Welcher Speicher weist die höchste Energiedichte auf?",
+        options: ["Schwungrad", "Chemische Speicher", "Kondensator", "Li-Ionen"],
         correct: 1
     },
     {
-        question: "Was bedeutet 'LFP' ausgeschrieben?",
-        options: ["Lithium-Fluss-Power", "Lithium-Eisen-Phosphat", "Long-Form-Power", "Liquid-Fuel-Process"],
+        question: "Wofür steht die Abkürzung LFP?",
+        options: ["Lithium-Fluss-Power", "Lithium-Eisenphosphat", "Long-Form-Power", "Liquid-Fuel-Process"],
         correct: 1
     },
     {
-        question: "Was ist die Hauptfunktion eines Elektrolyseurs?",
-        options: ["Strom aus Gas machen", "Wasser in H₂ und O₂ spalten", "Wärme speichern", "Druckluft erzeugen"],
+        question: "Was macht ein Elektrolyseur?",
+        options: ["Strom aus Gas erzeugen", "Wasser in Wasserstoff und Sauerstoff spalten", "Wärme speichern", "Druckluft erzeugen"],
         correct: 1
     },
     {
-        question: "Was zeichnet mechanische Schwungräder aus?",
-        options: ["Sehr hohe Speicherkapazität", "Extrem schnelle Reaktionszeit (Leistung)", "Saisonale Speicherung", "Chemie-frei"],
-        correct: 1
-    },
-    {
-        question: "Wie wird der Wirkungsgrad von CAES-Anlagen verbessert?",
+        question: "Wie wird der Wirkungsgrad bei adiabaten Druckluftspeicher erhöht?",
         options: ["Durch Nutzung der Kompressionswärme", "Durch Kühlung mit Eis", "Durch Zugabe von Benzin", "Durch Nutzung in der Nacht"],
         correct: 0
     },
     {
-        question: "Was ist der Unterschied zwischen Batterie und Kondensator?",
-        options: ["Farbe", "Batterie: Chemisch, Kondensator: Physikalisch (Feld)", "Batterie hält kürzer", "Kondensator ist schwerer"],
+        question: "Was ist der physikalische Unterschied zwischen Batterie und Kondensator?",
+        options: ["Farbe", "Batterie: Chemisch, Kondensator: Elektrisches Feld", "Batterie hält kürzer", "Kondensator ist schwerer"],
         correct: 1
     },
     {
-        question: "Aus welchem häufigen Stoff bestehen die Ionen in Natrium-Ionen-Batterien?",
-        options: ["Gold", "Kochsalz (Natriumchlorid)", "Sand", "Kohle"],
+        question: "Welcher Rohstoff wird für Natrium-Ionen-Batterien verwendet?",
+        options: ["Gold", "Kochsalz", "Sand", "Kohle"],
         correct: 1
     },
     {
-        question: "Warum sind Festkörperbatterien sicherer?",
+        question: "Warum gelten Festkörperbatterien als sicherer?",
         options: ["Sie haben einen Feuerlöscher eingebaut", "Kein brennbarer flüssiger Elektrolyt", "Sie werden nicht heiss", "Sie bestehen aus Stahl"],
         correct: 1
     },
     {
-        question: "Was bedeutet der Begriff 'Volatilität' bei Erneuerbaren?",
-        options: ["Sie sind teuer", "Die Erzeugung schwankt je nach Wetter", "Sie sind gefährlich", "Sie sind giftig"],
-        correct: 1
-    },
-    {
-        question: "Welche Teilchen wandern im Li-Ion Akku?",
+        question: "Welche Ionen wandern in einem Li-Ion-Akku?",
         options: ["Elektronen im Elektrolyt", "Lithium-Ionen", "Wasserstoff-Atome", "Neutronen"],
         correct: 1
     },
     {
-        question: "Was ist das grösste Hindernis für neue Pumpspeicherkraftwerke?",
-        options: ["Technik ist unbekannt", "Mangel an geeigneten Bergen/Tälern", "Zu wenig Wasser", "Zu geringer Wirkungsgrad"],
+        question: "Was limitiert den Neubau von Pumpspeicherkraftwerken am stärksten?",
+        options: ["Technik ist unbekannt", "Abhängigkeit von passender Topografie", "Zu wenig Wasser", "Zu geringer Wirkungsgrad"],
         correct: 1
     },
     {
-        question: "Wie haben sich die Kosten für Li-Ionen-Speicher in 10 Jahren entwickelt?",
-        options: ["Verdoppelt", "Gleich geblieben", "Um ca. 90% gesunken", "Leicht gestiegen"],
+        question: "Wie stark sind die Kosten für Li-Ionen-Batterien in den letzten 15 Jahren gesunken?",
+        options: ["Verdoppelt", "Gleich geblieben", "Um über 90%", "Leicht gestiegen"],
         correct: 2
     },
     {
-        question: "Welchem Zweck dienen 'Virtuelle Kraftwerke'?",
-        options: ["Computerspiele", "Vernetzung dezentraler Anlagen zu einem System", "Stromerzeugung im Metaverse", "Theoretische Forschung"],
-        correct: 1
-    },
-    {
-        question: "Was ist Grauer Wasserstoff?",
-        options: ["Aus Erneuerbaren hergestellt", "Aus fossilen Brennstoffen (Erdgas) hergestellt", "Alt und staubig", "Aus Atomstrom"],
-        correct: 1
+        question: "Wie wird Wasserstoff oft metaphorisch bezeichnet?",
+        options: ["Sauerstoff", "Stickstoff", "Erdöl von morgen", "Kohlendioxid"],
+        correct: 2
     }
 ];
 
